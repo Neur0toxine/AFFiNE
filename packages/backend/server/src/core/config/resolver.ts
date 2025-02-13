@@ -96,7 +96,7 @@ export class ServerConfigResolver {
       // this field should be removed after frontend feature flags implemented
       flavor: this.config.type,
       features: Array.from(ENABLED_FEATURES),
-      enableTelemetry: this.config.metrics.telemetry.enabled,
+      enableTelemetry: false,
     };
   }
 

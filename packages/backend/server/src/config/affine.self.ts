@@ -22,7 +22,7 @@ AFFiNE.serverName = AFFiNE.affine.canary
   : AFFiNE.affine.beta
     ? 'AFFiNE Beta Cloud'
     : 'AFFiNE Cloud';
-AFFiNE.metrics.enabled = !AFFiNE.node.test;
+AFFiNE.metrics.enabled = false;
 
 if (env.R2_OBJECT_STORAGE_ACCOUNT_ID) {
   AFFiNE.use('cloudflare-r2', {

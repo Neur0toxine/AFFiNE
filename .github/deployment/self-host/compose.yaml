@@ -1,6 +1,6 @@
 services:
   affine:
-    image: ghcr.io/toeverything/affine-graphql:stable
+    image: ghcr.io/neur0toxine/affine-graphql:stable
     container_name: affine_selfhosted
     command:
       ['sh', '-c', 'node ./scripts/self-host-predeploy && node ./dist/index.js']

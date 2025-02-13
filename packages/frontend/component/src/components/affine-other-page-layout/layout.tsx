@@ -17,10 +17,6 @@ export const AffineOtherPageLayout = ({
 }) => {
   const t = useI18n();
 
-  const openDownloadLink = useCallback(() => {
-    open(BUILD_CONFIG.downloadUrl, '_blank');
-  }, []);
-
   const { resolvedTheme } = useTheme();
   const backgroundImage =
     resolvedTheme === 'dark' && dotBgDark ? dotBgDark : dotBgLight;
@@ -39,12 +35,6 @@ export const AffineOtherPageLayout = ({
           </a>
 
           <DesktopNavbar />
-          <Button
-            onClick={openDownloadLink}
-            className={styles.hideInSmallScreen}
-          >
-            {t['com.affine.auth.open.affine.download-app']()}
-          </Button>
           <MobileNavbar />
         </div>
       )}

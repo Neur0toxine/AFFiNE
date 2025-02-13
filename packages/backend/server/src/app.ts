@@ -11,7 +11,6 @@ import {
 } from './base';
 import { SocketIoAdapter } from './base/websocket';
 import { AuthGuard } from './core/auth';
-import { ENABLED_FEATURES } from './core/config/server-feature';
 import { serverTimingAndCache } from './middleware/timing';
 
 export async function createApp() {

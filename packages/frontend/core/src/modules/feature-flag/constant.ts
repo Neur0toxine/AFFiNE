@@ -14,7 +14,7 @@ export const AFFINE_FLAGS = {
       'com.affine.settings.workspace.experimental-features.enable-ai.description',
     hide: true,
     configurable: true,
-    defaultState: true,
+    defaultState: false,
   },
   enable_ai_network_search: {
     category: 'affine',
@@ -24,7 +24,7 @@ export const AFFINE_FLAGS = {
       'com.affine.settings.workspace.experimental-features.enable-ai-network-search.description',
     hide: true,
     configurable: false,
-    defaultState: true,
+    defaultState: false,
   },
   enable_database_full_width: {
     category: 'blocksuite',
@@ -91,7 +91,7 @@ export const AFFINE_FLAGS = {
     description:
       'com.affine.settings.workspace.experimental-features.enable-ai-chat-block.description',
     configurable: false,
-    defaultState: true,
+    defaultState: false,
   },
   enable_ai_onboarding: {
     category: 'blocksuite',
@@ -101,7 +101,7 @@ export const AFFINE_FLAGS = {
     description:
       'com.affine.settings.workspace.experimental-features.enable-ai-onboarding.description',
     configurable: false,
-    defaultState: true,
+    defaultState: false,
   },
   enable_mind_map_import: {
     category: 'blocksuite',
